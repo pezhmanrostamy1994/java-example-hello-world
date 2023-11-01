@@ -26,25 +26,30 @@ Make sure you have the Java Development Kit (JDK) installed on your machine.
 git clone https://github.com/yourusername/example.java.helloworld.git
 ```
 
-Navigate to the project directory:
+### Navigate to the project directory:
+
 cd example.java.helloworld
-Compile the Java files:
+
+### Compile the Java files:
+
 javac HelloWorld/\*.java
 
-Usage
+### Usage
+
 Run the program:
 java HelloWorld.MultiLingualGreeting
 
 Enter the desired language code when prompted (e.g., 'en' for English, 'fa' for Persian, 'fr' for French, 'es' for Spanish).
 You should see the greeting in the chosen language.
 
-Structure
+### Structure
+
 The project has the following directory structure:
+
 example.java.helloworld/
 |-- HelloWorld/
-| |-- Greetings.java
-| |-- LanguageCodes.java
-| |-- MultiLingualGreeting.java
-|-- LICENSE
-|-- MANIFEST.txt
-|-- README.md
+| `-- Greetings.java
+| `-- LanguageCodes.java
+| `-- MultiLingualGreeting.java
+`-- MANIFEST.txt
+`-- README.md
