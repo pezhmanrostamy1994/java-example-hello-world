@@ -31,4 +31,19 @@ public enum LanguageCodes {
         }
         return null;
     }
+
+    public static String getSupportedLanguages() {
+        StringBuilder languages = new StringBuilder();
+
+        for (LanguageCodes code : LanguageCodes.values()) {
+            languages.append("'").append(code.getKey()).append("' for ").append(code.name()).append(", ");
+        }
+
+        // Removing last ", " for better formatting
+        if (languages.length() > 2) {
+            languages.setLength(languages.length() - 2);
+        }
+
+        return languages.toString();
+    }
 }
