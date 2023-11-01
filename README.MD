@@ -1,6 +1,6 @@
-# Java "Hello World" Example
+# Java "Hello World" Multi-Language Example
 
-This repository contains a basic Java program that prints out "Hello, World!" to the console.
+This repository contains a Java program that prompts the user for a language code and then prints out the greeting "Hello, World!" in the chosen language to the console.
 
 ## Table of Contents
 
@@ -28,23 +28,23 @@ git clone https://github.com/yourusername/example.java.helloworld.git
 
 Navigate to the project directory:
 cd example.java.helloworld
+Compile the Java files:
+javac HelloWorld/\*.java
 
-Compile the Java file:
-javac HelloWorld/Main.java
 Usage
 Run the program:
+java HelloWorld.MultiLingualGreeting
 
-```bash
-java example.java.helloworld.Main
-```
+Enter the desired language code when prompted (e.g., 'en' for English, 'fa' for Persian, 'fr' for French, 'es' for Spanish).
+You should see the greeting in the chosen language.
 
-You should see the following output:
-Hello, World!
 Structure
 The project has the following directory structure:
 example.java.helloworld/
-  |-- HelloWorld/
-  | |-- Main.java
-  |-- LICENSE
-  |-- MANIFEST.txt
-  |-- README.md
+|-- HelloWorld/
+| |-- Greetings.java
+| |-- LanguageCodes.java
+| |-- MultiLingualGreeting.java
+|-- LICENSE
+|-- MANIFEST.txt
+|-- README.md
