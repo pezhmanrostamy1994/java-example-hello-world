@@ -1,20 +1,15 @@
-/**
- * This class is used to display a "Hello World" message to the console.
- */
-package HelloWorld; // Package names should be in lowercase to conform to Java naming conventions
+package HelloWorld;
+
+import java.util.Scanner;
 
 public class Main {
 
-    /**
-     * The main entry point of the program.
-     * 
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // Define a constant variable for the message
-        final String greeting = "Hello, World!";
+        Scanner scanner = new Scanner(System.in);
 
-        // Print the greeting message to the console
-        System.out.println(greeting);
+        System.out.println("Please enter the language code (e.g., 'en' for English, 'fa' for Persian):");
+        String languageCode = scanner.nextLine();
+
+        System.out.println(Greetings.getGreeting(languageCode));
     }
 }
