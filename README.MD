@@ -7,8 +7,6 @@ This repository contains a Java program that prompts the user for a language cod
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Structure](#structure)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Getting Started
 
@@ -47,9 +45,12 @@ You should see the greeting in the chosen language.
 The project has the following directory structure:
 
 example.java.helloworld/
+
+```
 |-- HelloWorld/
 | `-- Greetings.java
 | `-- LanguageCodes.java
 | `-- MultiLingualGreeting.java
 `-- MANIFEST.txt
 `-- README.md
+```
