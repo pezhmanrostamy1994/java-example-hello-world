@@ -21,7 +21,7 @@ Make sure you have the Java Development Kit (JDK) installed on your machine.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/example.java.helloworld.git
+git clone https://github.com/pezhmanrostamy1994/java-example-hello-world-mvc
 ```
 
 ### Navigate to the project directory:
