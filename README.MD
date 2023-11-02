@@ -1,45 +1,36 @@
-# Java "Hello World" Multi-Language MVC Example
-
+<h1>Java "Hello World" Multi-Language MVC Example</h1>
 This repository contains a Java program using the Model-View-Controller (MVC) pattern that prompts the user for a language code and then prints out the greeting "Hello, World!" in the chosen language to the console.
 
-## Table of Contents
+<h3> of Contents</h3>
 
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Structure](#structure)
 
-## Getting Started
+### Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
-
+<h3>Prerequisites</h3>
 Make sure you have the Java Development Kit (JDK) installed on your machine.
 
-### Installation
-
-1. Clone the repository:
+<h3>Installation</h3>
+Clone the repository:
 
 ```bash
 git clone https://github.com/pezhmanrostamy1994/java-example-hello-world-mvc
 ```
 
-### Navigate to the project directory:
+Navigate to the project directory:
 
 ```bash
 cd example.java.helloworld
 ```
 
-### Navigate to the project directory:
+Compile the Java files:
 
 ```bash
-cd example.java.helloworld
-```
-
-### Compile the Java files:
-
-```bash
-javac Main.java controller/*.java model/*.java view/*.java
+javac Main.java Controller/*.java Model/*.java View/*.java
 ```
 
 ### Usage
@@ -66,7 +57,7 @@ example.java.helloworld/
 |   `-- GreetingView.java
 |-- Main.java
 |-- .gitignore
-`-- MANIFEST.txt
+|-- MANIFEST.txt
 `-- README.md
 
 ```
