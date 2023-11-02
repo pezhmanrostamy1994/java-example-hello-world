@@ -1,6 +1,6 @@
-# Java "Hello World" Multi-Language Example
+# Java "Hello World" Multi-Language MVC Example
 
-This repository contains a Java program that prompts the user for a language code and then prints out the greeting "Hello, World!" in the chosen language to the console.
+This repository contains a Java program using the Model-View-Controller (MVC) pattern that prompts the user for a language code and then prints out the greeting "Hello, World!" in the chosen language to the console.
 
 ## Table of Contents
 
@@ -26,31 +26,47 @@ git clone https://github.com/yourusername/example.java.helloworld.git
 
 ### Navigate to the project directory:
 
+```bash
 cd example.java.helloworld
+```
+
+### Navigate to the project directory:
+
+```bash
+cd example.java.helloworld
+```
 
 ### Compile the Java files:
 
-javac HelloWorld/\*.java
+```bash
+javac Main.java controller/*.java model/*.java view/*.java
+```
 
 ### Usage
 
 Run the program:
-java HelloWorld.MultiLingualGreeting
 
-Enter the desired language code when prompted (e.g., 'en' for English, 'fa' for Persian, 'fr' for French, 'es' for Spanish).
-You should see the greeting in the chosen language.
+```bash
+java Main
+```
+
+Enter the desired language code when prompted (e.g., 'en' for English, 'fa' for Persian, 'fr' for French, 'es' for Spanish). You should see the greeting in the chosen language.
 
 ### Structure
 
-The project has the following directory structure:
-
-example.java.helloworld/
+The project adopts the Model-View-Controller (MVC) design pattern and has the following directory structure:
 
 ```
-|-- HelloWorld/
-| `-- Greetings.java
-| `-- LanguageCodes.java
-| `-- MultiLingualGreeting.java
+example.java.helloworld/
+|-- Controller/
+|   `-- GreetingController.java
+|-- Model/
+|   `-- LanguageCodes.java
+|-- View/
+|   `-- GreetingView.java
+|-- Main.java
+|-- .gitignore
 `-- MANIFEST.txt
 `-- README.md
+
 ```

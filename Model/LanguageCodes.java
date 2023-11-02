@@ -1,4 +1,4 @@
-package HelloWorld;
+package Model;
 
 public enum LanguageCodes {
     ENGLISH("en", "Hello World"),
@@ -22,7 +22,6 @@ public enum LanguageCodes {
         return greeting;
     }
 
-    // اگر مایل به دریافت Enum بر اساس کلید باشید:
     public static LanguageCodes findByKey(String key) {
         for (LanguageCodes code : values()) {
             if (code.getKey().equals(key)) {
@@ -39,7 +38,6 @@ public enum LanguageCodes {
             languages.append("'").append(code.getKey()).append("' for ").append(code.name()).append(", ");
         }
 
-        // Removing last ", " for better formatting
         if (languages.length() > 2) {
             languages.setLength(languages.length() - 2);
         }
