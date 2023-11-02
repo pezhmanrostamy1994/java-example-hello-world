@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class GreetingController {
 
-    private GreetingView view;
-    private Scanner scanner;
+    private final GreetingView view;
+    private final Scanner scanner;
 
     public GreetingController(GreetingView view) {
         this.view = view;
@@ -15,8 +15,15 @@ public class GreetingController {
     }
 
     public void getUserInputAndDisplayGreeting() {
-        System.out.println("Please enter the language code (e.g., " + LanguageCodes.getSupportedLanguages() + "):");
+        System.out.println("Please enter a valid language code (e.g., " + LanguageCodes.getSupportedLanguages() + "):");
+        
         String languageCode = scanner.nextLine().trim().toLowerCase();
+
+        // بررسی ورودی خالی
+        if (languageCode.isEmpty()) {
+            view.displayGreeting("No language code entered. Please try again.");
+            return;
+        }
 
         String greeting = getGreetingByLanguageCode(languageCode);
         view.displayGreeting(greeting);
@@ -28,7 +35,7 @@ public class GreetingController {
         if (code != null) {
             return code.getGreeting();
         } else {
-            return "Language not supported.";
+            return "Language not supported. Please enter a valid code.";
         }
     }
 }
